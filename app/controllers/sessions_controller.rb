@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       flash_login(user)
       redirect(user)
     else
-      flash[:error] = "Unable to log in, please try again."
+      flash[:error] = "Login attempt failed, please try again."
       render :new
     end
   end
